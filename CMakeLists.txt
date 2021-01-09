@@ -13,5 +13,5 @@ IF(Boost_FOUND)
 ENDIF(Boost_FOUND)
 
 SET(USED_LIBS ${Boost_SYSTEM_LIBRARY} ${Boost_THREAD_LIBRARY} ${Boost_REGEX_LIBRARY})
-
-add_executable(server main.cpp session/session.cpp session/session.h server/server.cpp server/server.h)
+link_libraries(pthread)
+add_executable("${PROJECT_NAME}-app" main.cpp session/session.cpp session/session.h server/server.cpp server/server.h)
