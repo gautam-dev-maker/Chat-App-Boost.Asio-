@@ -1,7 +1,3 @@
-//
-// Created by Gautam Agrawal on 07/01/21.
-//
-
 #include "server.h"
 
 

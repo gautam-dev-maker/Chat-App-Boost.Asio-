@@ -2,6 +2,8 @@
 
 namespace io = boost::asio;
 
+using work_guard_type = boost::asio::executor_work_guard<boost::asio::io_context::executor_type>;
+
 int main()
 {
     io::io_context io_context;
